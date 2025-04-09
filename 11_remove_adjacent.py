@@ -7,10 +7,20 @@ adjacentes iguais são reduzidos a um único elemento.
 Exemplo: [1, 2, 2, 3]
 Irá retornar: [1, 2, 3]
 """
+from operator import index
+
 
 def remove_adjacent(nums):
     # +++ SUA SOLUÇÃO +++
-    return
+    if not nums:
+        return []
+    newList = [nums[0]]
+    anterior = nums[0]
+    for num in nums[1:]:
+        if num != anterior:
+            newList.append(num)
+            anterior = num
+    return newList
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

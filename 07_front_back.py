@@ -16,7 +16,6 @@ def front_back(a, b):
     if len(a) % 2 == 0:
         a_front = a[:int((len(a) / 2))]
         a_back = a[int((len(a) / 2)):]
-
     else:
         a_front = a[:int((len(a) / 2)+1)]
         a_back = a[int((len(a) / 2)+1):]
@@ -24,7 +23,6 @@ def front_back(a, b):
     if len(b) % 2 == 0:
         b_front = b[:int((len(b) / 2))]
         b_back = b[int((len(b) / 2)):]
-
     else:
         b_front = b[:int((len(b) / 2) + 1)]
         b_back = b[int((len(b) / 2) + 1):]
