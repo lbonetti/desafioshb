@@ -14,13 +14,13 @@ def remove_adjacent(nums):
     # +++ SUA SOLUÇÃO +++
     if not nums:
         return []
-    newList = [nums[0]]
+    new_list = [nums[0]]
     anterior = nums[0]
     for num in nums[1:]:
         if num != anterior:
-            newList.append(num)
+            new_list.append(num)
             anterior = num
-    return newList
+    return new_list
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

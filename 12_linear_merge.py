@@ -22,10 +22,10 @@ def merge_lists(long_list, short_list):
     for i in long_list:
         if short_list:
             if short_list[0] < i:
+                #print(f'Indice do for: {i}')
+                #print(f'Indice 0 da short_list: {short_list[0]}')
                 long_list.insert(long_list.index(i), short_list[0])
                 short_list.remove(short_list[0])
-            else:
-                pass
     return long_list
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
